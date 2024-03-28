@@ -44,7 +44,7 @@ class AuthController extends GetxController {
       await checkToken();
     } else if (state?.appStatus == AppType.UNAUTHENTICATED) {
       await clearData();
-      Get.offAllNamed(PageName.NAVTAB);
+      Get.offAllNamed(PageName.SIGNUP);
     } else if (state?.appStatus == AppType.AUTHENTICATED) {
       Get.offAllNamed(PageName.NAVTAB);
     } else {
